@@ -1,17 +1,35 @@
 import React from "react";
 
+const cardtitle = [
+  {
+    title: "프론트앤드 강의 💻",
+    desc: "웹 디자이너, 웹 퍼블리셔, 프론트앤드를 위한 강의 리스트 입니다.",
+    btnLink: "/",
+  },
+];
+
+const cardText = [
+  {
+    title: "웹표준 사이트 만들기",
+  },
+];
+
+function cardInner() {
+  return;
+}
+
 function Card({ attr }) {
   return (
     <section id="cardType" className={`card__wrap ${attr[0]} ${attr[1]}`}>
-      <h2>프론트앤드 강의 💻</h2>
-      <p>웹 디자이너, 웹 퍼블리셔, 프론트앤드를 위한 강의 리스트 입니다.</p>
+      <h2>{cardtitle.title}</h2>
+      <p>{cardtitle.desc}</p>
       <div className={`card__inner ${attr[2]}`}>
         <article className="card">
           <figure className="card__header">
             <img src="assets/img/card_bg01_01.jpg" alt="웹표준 사이트 만들기" />
           </figure>
           <div className="card__body">
-            <h3 className="tit">웹표준 사이트 만들기</h3>
+            <h3 className="tit"></h3>
             <p className="desc">
               사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을
               익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한

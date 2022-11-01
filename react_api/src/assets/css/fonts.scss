@@ -83,3 +83,26 @@
     url("../fonts/Rajdhani-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "NanumBarunpen";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NanumBarunpen.eot");
+  src: url("../fonts/NanumBarunpen.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NanumBarunpen.woff2") format("woff2"),
+    url("../fonts/NanumBarunpen.woff") format("woff"),
+    url("../fonts/Rajdhani-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumBarunpen";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/NanumBarunpen.eot");
+  src: url("../fonts/NanumBarunpen.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NanumBarunpen-Bold.woff2") format("woff2"),
+    url("../fonts/NanumBarunpen-Bold.woff") format("woff"),
+    url("../fonts/Rajdhani-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
