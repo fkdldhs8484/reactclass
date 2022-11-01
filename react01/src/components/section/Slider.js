@@ -5,6 +5,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const sliderTitle = {
+  title: "NEW PROJECT",
+  desc: "너무 무리하지 말아요! 이미 당신은 잘하고 있고! 앞으로도 잘 할 수 있어요!",
+};
+
 function Slider(props) {
   return (
     <section id="sliderType" className={`slider__inner ${props.fonts}`}>
@@ -22,12 +27,8 @@ function Slider(props) {
           <SwiperSlide>
             <div className="desc">
               <span>DEVELOPER</span>
-              <h3>NEW PROJECT</h3>
-              <p>
-                너무 무리하지 말아요! 이미 당신은 잘하고 있고!
-                <br />
-                앞으로도 잘 할 수 있어요!
-              </p>
+              <h3>{sliderTitle.title}</h3>
+              <p>{sliderTitle.desc}</p>
               <div className="btn">
                 <a href="/">자세히 보기</a>
                 <a href="/" className="black">
