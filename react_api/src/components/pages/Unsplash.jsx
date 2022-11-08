@@ -4,7 +4,7 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import AboutCont from "../include/AboutCont";
-import Contant from "../layout/Contant";
+import Contact from "../layout/Contact";
 
 const Unsplash = () => {
   return (
@@ -13,7 +13,7 @@ const Unsplash = () => {
       <Contents>
         <Title title={["about", "referece API"]} />
         <AboutCont />
-        <Contant />
+        <Contact />
       </Contents>
       <Footer />
     </>

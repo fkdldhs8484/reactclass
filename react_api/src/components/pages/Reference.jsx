@@ -5,7 +5,7 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import ReferCont from "../include/ReferCont";
-import Contant from "../layout/Contant";
+import Contact from "../layout/Contact";
 
 //s꼭 붙이기 두번째는 무조건 set 붙여야함
 const Reference = () => {
@@ -25,7 +25,7 @@ const Reference = () => {
       <Contents>
         <Title title={["about", "referece API"]} />
         <ReferCont references={references} />
-        <Contant />
+        <Contact />
       </Contents>
       <Footer />
     </>

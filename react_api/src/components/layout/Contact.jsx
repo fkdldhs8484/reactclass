@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contant = () => {
+const Contact = () => {
   return (
     <section className="cont__contact">
       <p>Let's create something new</p>
@@ -12,4 +12,4 @@ const Contant = () => {
   );
 };
 
-export default Contant;
+export default Contact;
