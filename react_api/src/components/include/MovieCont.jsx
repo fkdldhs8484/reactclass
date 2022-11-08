@@ -1,24 +1,36 @@
 import React from "react";
 
-const MovieBox = ({ movies }) => {
-  return <div>({movies})</div>;
-};
-
-const MovieCont = ({ movies }) => {
-  //   console.log({ movies });
+function MovieItem(props) {
   return (
-    <sectin className="cont__movie">
+    <li>
+      <a href={`https://www.themoviedb.org/movie/${props.movie.id}`}>
+        <img
+          src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
+          alt={props.movie.title}
+        />
+        <em>
+          <span className="title">{props.movie.title}</span>
+          <span className="star">{props.movie.vote_average}</span>
+        </em>
+      </a>
+    </li>
+  );
+}
+
+function MovieCont(props) {
+  return (
+    <section className="cont__movies">
       <div className="container">
-        <div className="novie__inner">
-          <div className="movie_box">
-            {movies.map((movie, idx) => (
-              <MovieBox key={idx} movie={movie.movie} />
+        <div className="movie__inner">
+          <ul>
+            {props.movies.map((movies, index) => (
+              <MovieItem key={index} movie={movies} />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
-    </sectin>
+    </section>
   );
-};
+}
 
 export default MovieCont;
