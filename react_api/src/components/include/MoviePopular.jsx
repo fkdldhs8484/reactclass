@@ -16,7 +16,6 @@ function MoviePopularItem(props) {
   );
 }
 
-// 6번 : 매개변수에 담긴 값을 가져옴
 function MoviePopular(props) {
   console.log(props.moviesPopular);
   return (
