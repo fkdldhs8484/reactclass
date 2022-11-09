@@ -20,5 +20,16 @@ export default {
     TitleCont,
     ContantCont,
   },
+
+  data: function () {
+    return {
+      titles: [
+        { text: "we provide" },
+        { text: "visual coding" },
+        { text: "solutions" },
+        { text: "for you API" },
+      ],
+    };
+  },
 };
 </script>
