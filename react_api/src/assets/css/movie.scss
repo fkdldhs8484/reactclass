@@ -7,19 +7,22 @@
     li {
       width: 23%;
       position: relative;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       em {
         display: block;
         height: 80px;
         margin-bottom: 30px;
-        font-family: var(--font-sub2);
+        font-family: var(--font-kor);
       }
-
       .title {
         padding: 5px 0;
         display: inline-block;
       }
-
       .star {
         background: #fff;
         color: #000;
@@ -28,10 +31,10 @@
         top: 10px;
         width: 30px;
         height: 30px;
-        border-radius: 100px;
+        border-radius: 50%;
         text-align: center;
         line-height: 30px;
-        font-weight: 800;
+        font-weight: 700;
       }
     }
   }
@@ -40,6 +43,8 @@
     color: var(--white);
   }
 }
+
+// movieSearch
 
 .movie__search {
   margin-bottom: 100px;
@@ -55,29 +60,69 @@
     height: 0;
   }
   input {
-    background: #000;
-    border: 2px solid var(--white);
+    background: var(--black);
+    border: 1px solid var(--white);
     border-radius: 50px;
-    color: #fff;
+    color: var(--white);
     width: 100%;
-    padding: 10px 30px;
-    font-family: var(--font-sub2);
+    padding: 14px 30px;
+    font-family: var(--font-kor);
+    margin-top: 20px;
   }
   button {
     position: absolute;
-    font-size: 12px;
-    right: 10px;
-    top: 3px;
+    right: 6px;
+    top: 5px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 0;
-    font-family: var(--font-sub2);
     cursor: pointer;
     z-index: 1000;
+    margin-top: 20px;
   }
 }
 
-.Movie__list {
-  margin-bottom: 200px;
+// movieSearch
+
+.cont__popular__movie {
+  margin-top: 200px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+  &::before {
+    background: linear-gradient(90deg, rgb(0, 0, 0), transparent);
+    width: 230px;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    background: linear-gradient(-90deg, rgb(0, 0, 0), transparent);
+    width: 230px;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+}
+.movie__popular_inner {
+  // overflow-x:scroll;
+  ul {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    li {
+      scroll-snap-align: center;
+      object-fit: cover;
+      margin: 55px;
+      height: 500px;
+      position: relative;
+      img {
+        width: 33vh;
+      }
+    }
+  }
 }

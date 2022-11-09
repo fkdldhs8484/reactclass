@@ -5,28 +5,17 @@ import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import MovieCont from "../include/MovieCont";
-import MoviePopular from "../include/MoviePopular";
 import MovieSearch from "../include/MovieSearch";
+import MoviePopular from "../include/MoviePopular";
 import Contact from "../layout/Contact";
 
 const Movie = () => {
   const [movies, setMovies] = useState([]);
-
-  const [popular, setPopular] = useState([]);
-
-  useEffect(() => {
-    fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=18acbb5a46d65f5d2353c95c8c861560&language=ko&region=KR"
-    )
-      .then((response) => response.json())
-      .then((result) => setPopular(result.results))
-      // .then((result) => setMovies(result))
-      .catch((error) => console.log("error", error));
-  }, []);
+  const [moviesPopular, setPopularMovies] = useState([]);
 
   const search = (query) => {
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=18acbb5a46d65f5d2353c95c8c861560&query=${query}`
+      `https://api.themoviedb.org/3/search/movie?api_key=3d606cf9dc17d29e0dec9772c8a629e6&languages=ko-kr&query=marvel&page=1&query=${query}`
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
@@ -35,7 +24,17 @@ const Movie = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/search/movie?api_key=18acbb5a46d65f5d2353c95c8c861560&query=spider"
+      "https://api.themoviedb.org/3/movie/popular?api_key=3d606cf9dc17d29e0dec9772c8a629e6&languages=ko-kr&query=marvel&page=1"
+    )
+      .then((response) => response.json())
+
+      .then((result) => setPopularMovies(result.results))
+      .catch((error) => console.log(error));
+  }, []);
+
+  useEffect(() => {
+    fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=3d606cf9dc17d29e0dec9772c8a629e6&languages=ko-kr&query=marvel&page=1"
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
@@ -46,8 +45,8 @@ const Movie = () => {
     <>
       <Header />
       <Contents>
-        <Title title={["movie", "referece api"]} />
-        <MoviePopular popular={popular} />
+        <Title title={["movie", "reference api"]} />
+        <MoviePopular moviesPopular={moviesPopular} />
         <MovieSearch onSearch={search} />
         <MovieCont movies={movies} />
         <Contact />
