@@ -71,3 +71,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.unsplash__inner {
+  padding-bottom: 200px;
+}
+.unsplash__images {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+</style>
