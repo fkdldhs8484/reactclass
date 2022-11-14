@@ -15,7 +15,7 @@ const UnsplashSlider = ({ random }) => {
     <section className="cont__unsplashslider">
       <div className="container">
         <div className="unsplashslider__inner">
-          <ul></ul>
+          <ul>{}</ul>
         </div>
       </div>
     </section>
