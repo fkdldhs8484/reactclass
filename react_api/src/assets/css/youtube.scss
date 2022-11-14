@@ -1,20 +1,21 @@
-.cont__unsplash {
+.cont__youtube {
     ul {
         column-count: 4;
         column-gap: 20px;
         width: 100%;
+    }
 
-        li {
-            margin-bottom: 25px;
+    li {
+        margin-bottom: 20px;
 
-            img {
-                border-radius: 5px;
-            }
+        img {
+            border-radius: 5px;
         }
     }
 }
-// unsplash__search
-.unsplash__search {
+
+// youtube__search
+.youtube__search {
     margin-bottom: 100px;
 
     .container {
@@ -46,26 +47,5 @@
         font-family: var(--font-kor3);
         z-index: 100;
         cursor: pointer;
-    }
-}
-// unsplash__btn
-.unsplash__btn {
-    .container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-
-        button {
-            padding: 3px 10px 5px;
-            margin: 0 5px;
-            border-radius: 20px;
-            border: 1px solid var(--white);
-            cursor: pointer;
-
-            &:hover {
-                background: var(--bg-dark-color);
-                color: var(--white);
-            }
-        }
     }
 }
