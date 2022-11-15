@@ -7,17 +7,17 @@ import AboutCont from "../include/AboutCont";
 import Contact from "../layout/Contact";
 
 const About = () => {
-  return (
-    <>
-      <Header />
-      <Contents>
-        <Title title={["about", "referece API"]} />
-        <AboutCont />
-        <Contact />
-      </Contents>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Contents>
+                <Title title={["about", "referece API"]} />
+                <AboutCont />
+                <Contact />
+            </Contents>
+            <Footer />
+        </>
+    );
 };
 
 export default About;

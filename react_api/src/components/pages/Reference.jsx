@@ -13,7 +13,7 @@ const Reference = () => {
 
     useEffect(() => {
         fetch(
-            "https://fkdldhs8484.github.io/reactclass/react_api/src/utils/reference01.json"
+            "https://fkdldhs8484.github.io/reactclass/react_api/src/Utils/reference01.json"
         )
             .then((response) => response.json())
             .then((result) => setReferences(result.cssRefer))

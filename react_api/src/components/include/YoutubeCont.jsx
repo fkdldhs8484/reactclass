@@ -8,6 +8,7 @@ const YoutubeVideos = ({ videos }) => {
                     src={videos.snippet.thumbnails.medium.url}
                     alt={videos.snippet.description}
                 />
+                <div className="youtubeTitle">{videos.snippet.title}</div>
             </a>
         </li>
     );
@@ -15,9 +16,9 @@ const YoutubeVideos = ({ videos }) => {
 
 const YoutubeCont = ({ videos }) => {
     return (
-        <section className="cont__unsplash">
+        <section className="cont__youtube">
             <div className="container">
-                <div className="unsplash__inner">
+                <div className="youtube__inner">
                     <ul>
                         {videos.map((videos, index) => (
                             <YoutubeVideos key={index} videos={videos} />
