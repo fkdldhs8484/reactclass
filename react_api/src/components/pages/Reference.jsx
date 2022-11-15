@@ -9,27 +9,28 @@ import Contact from "../layout/Contact";
 
 //s꼭 붙이기 두번째는 무조건 set 붙여야함
 const Reference = () => {
-  const [references, setReferences] = useState([]);
+    const [references, setReferences] = useState([]);
 
-  useEffect(() => {
-    fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
-      .then((response) => response.json())
-      // .then((result) => console.log(result.data.htmlRefer))
-      .then((result) => setReferences(result.data.htmlRefer))
-      .catch((error) => console.log("error", error));
-  }, []);
+    useEffect(() => {
+        fetch(
+            "https://fkdldhs8484.github.io/reactclass/react_api/src/utils/reference01.json"
+        )
+            .then((response) => response.json())
+            .then((result) => setReferences(result.cssRefer))
+            .catch((error) => console.log("error", error));
+    }, []);
 
-  return (
-    <>
-      <Header />
-      <Contents>
-        <Title title={["about", "referece API"]} />
-        <ReferCont references={references} />
-        <Contact />
-      </Contents>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Contents>
+                <Title title={["Reference", "Book"]} />
+                <ReferCont references={references} />
+                <Contact />
+            </Contents>
+            <Footer />
+        </>
+    );
 };
 
 export default Reference;
