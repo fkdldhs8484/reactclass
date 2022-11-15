@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { fetchAPI } from '../utils/fetchAPI'
-import { Catrgory, Videos } from './'
+import { Category, Videos } from './'
 
 const MainConts = () => {
   const [selectCategory, setSelectCategory] = useState('dog')
@@ -14,7 +14,7 @@ const MainConts = () => {
   return (
     <main id="main">
       <aside id="aside">
-        <Catrgory
+        <Category
           selectCategory={selectCategory}
           setSelectCategory={setSelectCategory}
         />

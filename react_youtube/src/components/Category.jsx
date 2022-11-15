@@ -2,7 +2,7 @@ import React from 'react'
 
 import { categories } from '../utils/content'
 
-const Catrgory = ({ selectCategory, setSelectCategory }) => {
+const Category = ({ selectCategory, setSelectCategory }) => {
   return (
     <div>
       {categories.map((category) => (
@@ -18,4 +18,4 @@ const Catrgory = ({ selectCategory, setSelectCategory }) => {
   )
 }
 
-export default Catrgory
+export default Category
