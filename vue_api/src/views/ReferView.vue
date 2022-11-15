@@ -18,7 +18,7 @@
         </div>
       </div>
     </section>
-    <ContantCont />
+    <ContactCont />
     <FooterCont />
   </div>
 </template>
@@ -27,17 +27,15 @@
 import HeaderCont from "@/components/HeaderCont.vue";
 import FooterCont from "@/components/FooterCont.vue";
 import TitleCont from "@/components/TitleCont.vue";
-import ContantCont from "@/components/ContantCont.vue";
+import ContactCont from "@/components/ContactCont.vue";
 import { ref } from "vue";
-
 export default {
   components: {
     HeaderCont,
     FooterCont,
     TitleCont,
-    ContantCont,
+    ContactCont,
   },
-
   setup() {
     const refers = ref([]);
     const references = () => {
@@ -62,16 +60,13 @@ export default {
 .refer__inner {
   padding-bottom: 200px;
   font-family: "NanumBarunpen";
-
   h2 {
     font-style: 30px;
     color: var(--black);
   }
 }
-
 .refer__list {
   border: 1px solid var(--bg-dark-border);
-
   li {
     border-bottom: 1px solid var(--bg-dark-border);
     a {
@@ -79,18 +74,15 @@ export default {
       align-items: center;
       width: 100%;
       color: var(--black);
-
       span {
         display: inline-block;
         padding: 15px 20px;
       }
-
       .num {
         flex: 1 1 5%;
         text-align: center;
         border-right: 1px solid var(--bg-dark-border);
       }
-
       .name {
         flex: 1 1 20%;
         border-right: 1px solid var(--bg-dark-border);

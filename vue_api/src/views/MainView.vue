@@ -1,9 +1,9 @@
 <template>
   <div>
     <HeaderCont />
-    <section class="main__cont">
-      <div class="container">
-        <div class="main__inner">
+    <section className="cont__main">
+      <div className="container">
+        <div className="main__inner">
           <div v-for="title in titles" v-bind:key="title.text">
             {{ title.text }}
           </div>
