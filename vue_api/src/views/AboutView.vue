@@ -8,8 +8,8 @@
         <div className="about__inner">
           <div className="part1">
             <img
-              src="https://images.unsplash.com/photo-1541959833400-049d37f98ccd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="정글이미지"
+              src="https://images.unsplash.com/photo-1668510137538-0343f4fdedbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="타조"
             />
             <h3 className="about__title">꿈을 설계하고 디자인 하다.</h3>
             <p>
@@ -24,8 +24,8 @@
           </div>
           <div className="part2">
             <img
-              src="https://images.unsplash.com/photo-1525923838299-2312b60f6d69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
-              alt="식물이미지"
+              src="https://images.unsplash.com/photo-1563482776068-4dac10f9373d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="타조"
             />
             <div>
               <h3 className="about__title">열심히 할수록 기회는 따른다.</h3>
@@ -42,8 +42,8 @@
           </div>
           <div className="part3">
             <img
-              src="https://images.unsplash.com/photo-1550592704-6c76defa9985?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="공부이미지"
+              src="https://images.unsplash.com/photo-1629383885766-d5c8f7d7bf53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="타조"
             />
             <div>
               <h3 className="about__title">나에게 정직하다.</h3>
