@@ -7,9 +7,12 @@ const MainConts = () => {
   const [selectCategory, setSelectCategory] = useState('dog')
   const [videos, setVideos] = useState(null)
 
+  // &type=videos --> 만약 사진이 안나오는게 있다면  옆에 붙이기
   useEffect(() => {
-    fetchAPI(`search?part=snippet&q=dog`).then((data) => console.log(data))
-  }, [])
+    fetchAPI(`search?part=snippet&q=${selectCategory}&type=video`).then(
+      (data) => setVideos(data.items)
+    )
+  }, [selectCategory])
 
   return (
     <main id="main">

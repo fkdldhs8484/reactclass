@@ -19,7 +19,7 @@ export const categories = [
   { name: '루퐁이네 ', icon: <CiLemon /> },
   { name: '사둥이네TV', icon: <CiLollipop /> },
   { name: '소녀의행성', icon: <CiPizza /> },
-  { name: '뮤직 메이트', icon: <CiUmbrella /> },
+  { name: '천재경 사월이', icon: <CiUmbrella /> },
   { name: '하오TV', icon: <CiStar /> },
   { name: '보통견주', icon: <CiRainbow /> },
   { name: '시바견 미쓰리 ', icon: <CiMedal /> },
