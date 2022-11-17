@@ -23,13 +23,18 @@ const VideoConts = () => {
 
   return (
     <section className="videoconts">
-      <div className="left">
-        <div className="play">
-          <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls />
+      <div className="container">
+        <div className="left">
+          <div className="play">
+            <ReactPlayer
+              url={`https://www.youtube.com/watch?v=${id}`}
+              controls
+            />
+          </div>
+          <div className="desc"></div>
         </div>
-        <div className="desc"></div>
+        <div className="right"></div>
       </div>
-      <div className="right"></div>
     </section>
   )
 }
