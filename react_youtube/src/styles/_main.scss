@@ -23,6 +23,7 @@
         margin-right: 10px;
         vertical-align: -1px;
       }
+
       &:hover {
         background: rgb(255, 255, 255);
         color: #fff;
@@ -193,4 +194,44 @@
 
 .channel-videos {
   margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  #main {
+    #aside {
+      display: flex;
+
+      justify-content: center;
+
+      button {
+        // display: block;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-top: 30px;
+
+        span {
+          display: none;
+
+          svg {
+            align-items: center;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    #contents {
+      margin-top: 30px;
+    }
+  }
+
+  .videoconts {
+    .container {
+      width: 100%;
+
+      .left {
+        width: 75%;
+      }
+    }
+  }
 }

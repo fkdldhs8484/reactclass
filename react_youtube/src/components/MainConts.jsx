@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { fetchAPI } from '../utils/fetchAPI'
-import { Category, Videos } from './'
+import { Category, Videos, Loader } from './'
 
 const MainConts = () => {
   const [selectCategory, setSelectCategory] = useState('dog')
