@@ -1,0 +1,57 @@
+[debug] [2022-11-30T05:26:50.703Z] ----------------------------------------------------------------------
+[debug] [2022-11-30T05:26:50.706Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\line\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-30T05:26:50.707Z] CLI Version:   11.16.1
+[debug] [2022-11-30T05:26:50.707Z] Platform:      win32
+[debug] [2022-11-30T05:26:50.707Z] Node Version:  v16.18.0
+[debug] [2022-11-30T05:26:50.709Z] Time:          Wed Nov 30 2022 14:26:50 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-30T05:26:50.709Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-30T05:26:50.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-30T05:26:50.811Z] > authorizing via signed-in user (fkdldhs8484@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\line\Documents\reactclass\react_api
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-30T05:27:08.187Z] Using project from CLI flag: react-api01
+[debug] [2022-11-30T05:27:08.190Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-api01 [none]
+[debug] [2022-11-30T05:27:08.626Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-api01 200
+[debug] [2022-11-30T05:27:08.627Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-api01 {"projectId":"react-api01","projectNumber":"915968921173","displayName":"react-api01","name":"projects/react-api01","resources":{"hostingSite":"react-api01"},"state":"ACTIVE","etag":"1_630df914-a6cf-43d5-aef5-9d534bbd0872"}
+[info] i  Using project react-api01 (react-api01) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\line\Documents\reactclass 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=626290197&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-11-30T05:27:09.202Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-11-30T05:27:09.203Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-11-30T05:27:09.530Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-11-30T05:27:09.530Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-11-30T05:27:09.545Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-11-30T05:27:09.872Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-11-30T05:27:09.872Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"fkdldhs8484","id":109262091,"node_id":"U_kgDOBoM1Cw","avatar_url":"https://avatars.githubusercontent.com/u/109262091?v=4","gravatar_id":"","url":"https://api.github.com/users/fkdldhs8484","html_url":"https://github.com/fkdldhs8484","followers_url":"https://api.github.com/users/fkdldhs8484/followers","following_url":"https://api.github.com/users/fkdldhs8484/following{/other_user}","gists_url":"https://api.github.com/users/fkdldhs8484/gists{/gist_id}","starred_url":"https://api.github.com/users/fkdldhs8484/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/fkdldhs8484/subscriptions","organizations_url":"https://api.github.com/users/fkdldhs8484/orgs","repos_url":"https://api.github.com/users/fkdldhs8484/repos","events_url":"https://api.github.com/users/fkdldhs8484/events{/privacy}","received_events_url":"https://api.github.com/users/fkdldhs8484/received_events","type":"User","site_admin":false,"name":"이유나","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2022-07-14T04:01:36Z","updated_at":"2022-11-25T10:03:29Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":757381,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as fkdldhs8484 
+[info] 
