@@ -6,4 +6,3 @@ npx create-react-app react01
 
 ## 1차 완성 : 컴퍼넌트 사용, props 사용, swiper 사용
 
-http://127.0.0.1:5500/build/index.html   
